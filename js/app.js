@@ -7,4 +7,4 @@ var fireApp = angular.module('fireApp', ['firebase']);
 fireApp.value('fireURL', 'https://ogawl.firebaseio.com/messages');
 
 // max log length
-fireApp.value('logLength', 8);
+fireApp.value('logLength', 20);

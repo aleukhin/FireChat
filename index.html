@@ -10,34 +10,38 @@
 </head>
 <body>
 
-<div class="container" ng-controller="AppCtrl">
+<div id="container" class="navbar container-fluid lrpadding nobottommargin" ng-controller="AppCtrl">
 
-    <div class="panel panel-primary">
+    <div class="navbar navbar-fixed-top toppadding">
 
-        <div class="panel-heading">
-            <h3 class="panel-title">Firebase Chat App</h3>
+        <div class="panel panel-primary">
+
+            <div class="panel-heading">
+                <h3 class="panel-title">Firebase Chat App</h3>
+            </div>
+
+            <div>
+                <form id="messageForm" class="form-inline" ng-submit="addMessage()">
+
+                        <input type="text" class="form-control inline-name" id="inputName" placeholder="Name"
+                               ng-model="inputName" autofocus required>
+
+                        <input type="text" class="form-control inline-message" id="inputMessage" placeholder="Message"
+                               ng-model="inputMessage" required>
+
+                        <button type="submit" class="btn btn-default" id="submitButton">Submit</button>
+
+                </form>
+            </div>
+
         </div>
-
-        <div>
-            <form id="messageForm" class="form-inline" ng-submit="addMessage()">
-                <div class="form-group">
-                    <input type="text" class="form-control inline-name" id="inputName" placeholder="Name"
-                           ng-model="inputName" autofocus required>
-
-                    <input type="text" class="form-control inline-message" id="inputMessage" placeholder="Message"
-                           ng-model="inputMessage" required>
-
-                    <button type="submit" class="btn btn-default" id="submitButton">Submit</button>
-                </div>
-            </form>
-        </div>
-        <br>
-
-        <ul id="messages" class="list-group">
-            <li class="list-group-item" ng-repeat="message in messages"><b>{{message.name}}:</b> {{message.text}}</li>
-        </ul>
 
     </div>
+
+    <ul id="messages" class="list-group">
+        <li class="list-group-item" ng-repeat="message in messages"><b>{{message.name}}:</b> {{message.text}}
+        </li>
+    </ul>
 
 </div>
 
