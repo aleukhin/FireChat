@@ -15,6 +15,9 @@ fireApp.controller('AppCtrl', ['$scope', 'angularFire', 'logLength', 'fireURL',
 
                 $scope.messages.push({name: $scope.inputName, text: $scope.inputMessage});
 
+                // scroll to bottom of chat
+                $(window).scrollTop($(document).height());
+
                 $scope.inputMessage = '';
             });
         }

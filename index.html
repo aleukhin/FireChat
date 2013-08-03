@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<div class="container" ng-controller="AppCtrl">
+<div id="container" class="navbar container-fluid lrpadding" ng-controller="AppCtrl">
 
     <div class="navbar navbar-fixed-top toppadding">
 
@@ -36,41 +36,39 @@
 
         </div>
 
-        <div>
-
-            <ul id="messages" class="list-group">
-                <li class="list-group-item" ng-repeat="message in messages"><b>{{message.name}}:</b> {{message.text}}
-                </li>
-            </ul>
-
-        </div>
-
     </div>
 
-    <!-- jQuery -->
-    <script src="http://code.jquery.com/jquery.js"></script>
+    <ul id="messages" class="list-group">
+        <li class="list-group-item" ng-repeat="message in messages"><b>{{message.name}}:</b> {{message.text}}
+        </li>
+    </ul>
 
-    <!-- webshims -->
-    <script src="js-webshim/minified/extras/modernizr-custom.js"></script>
-    <script src="js-webshim/minified/polyfiller.js"></script>
+</div>
 
-    <!-- AngularJS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+<!-- jQuery -->
+<script src="http://code.jquery.com/jquery.js"></script>
 
-    <!-- Firebase -->
-    <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+<!-- webshims -->
+<script src="js-webshim/minified/extras/modernizr-custom.js"></script>
+<script src="js-webshim/minified/polyfiller.js"></script>
 
-    <!-- Angular Fire -->
-    <script src="http://firebase.github.io/angularFire/angularFire.js"></script>
+<!-- AngularJS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 
-    <!-- Bootstrap -->
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+<!-- Firebase -->
+<script src="https://cdn.firebase.com/v0/firebase.js"></script>
 
-    <!-- App -->
-    <script src="js/app.js"></script>
+<!-- Angular Fire -->
+<script src="http://firebase.github.io/angularFire/angularFire.js"></script>
 
-    <!-- Controller -->
-    <script src="js/controllers/AppCtrl.js"></script>
+<!-- Bootstrap -->
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+
+<!-- App -->
+<script src="js/app.js"></script>
+
+<!-- Controller -->
+<script src="js/controllers/AppCtrl.js"></script>
 
 </body>
 </html>

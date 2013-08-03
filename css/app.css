@@ -13,3 +13,8 @@ body { padding-top: 160px; }
 .toppadding {
     padding-top: 20px;
 }
+
+.lrpadding {
+    padding-left: 15px;
+    padding-right: 15px;
+}
